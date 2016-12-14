@@ -13,7 +13,8 @@ import java.util.Date;
 public class Coche {
     private String matricula;
     private int Hent,Hsal;
-    
+    public Coche() { 
+    }
 public Coche(String matricula, int Hent, int Hsal) {
         this.matricula = matricula;
         this.Hent = Hent;

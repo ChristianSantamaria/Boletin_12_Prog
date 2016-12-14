@@ -15,9 +15,10 @@ public class Garaxe {
     private Coche[] plzs = new Coche[4];
     
     public void entrarGaraxe(Coche c){
-        for(int i=0; i== 5;i++){
-            if(plzs[i]==null){
+        for(int i=0; i<= 5;i++){
+            if((plzs[i])==null){
                 plzs[i]=c;
+                break;
             }else if(i==5){
                 JOptionPane.showMessageDialog(null,"COMPLETO");
             }
@@ -29,7 +30,6 @@ public class Garaxe {
         int f1,f2,T;
         String mc=null;
         for(int i=0; i<=5;i++){
-            System.out.print(plzs[0].getMatricula());
             mc=plzs[i].getMatricula();
             if(mc.equals(mb)){
                 f1=plzs[i].getHent();
@@ -49,6 +49,6 @@ public class Garaxe {
             apagar = 1.5+(0.2*(tiempo-3));
         }
         Reci=Double.parseDouble(JOptionPane.showInputDialog("Ten que pagar" + apagar));
-        JOptionPane.showMessageDialog( null, "FACTURA\n MATRICUAL:"+matri+"\nTEMPO:"+tiempo+" horas \nPRECIO:"+apagar+"\nCARTOS RECIBIDOS:"+Reci+"\nCARTOS DEVOLTOS:"+(apagar-Reci)+"\n \n GRAZASPOR USAR O NOSO APARCODIRO" );
+        JOptionPane.showMessageDialog( null, "FACTURA\n MATRICUAL:"+matri+"\nTEMPO:"+tiempo+" horas \nPRECIO:"+apagar+"\nCARTOS RECIBIDOS:"+Reci+"\nCARTOS DEVOLTOS:"+(Reci-apagar)+"\n \n GRAZASPOR USAR O NOSO APARCODIRO" );
     }
 }
