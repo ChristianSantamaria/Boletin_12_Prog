@@ -37,6 +37,7 @@ public class Garaxe {
                 T=f2-f1;
                 factura(T,plzs[i].getMatricula());
                 plzs[i]=null;
+                break;
             }
         }
     }
