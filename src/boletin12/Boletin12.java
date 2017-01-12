@@ -18,6 +18,7 @@ public class Boletin12 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //,
         Coche bmw =new Coche("1234 AAA",10,16);
         Garaxe pintorColmeiro = new Garaxe();
         pintorColmeiro.entrarGaraxe(bmw);
